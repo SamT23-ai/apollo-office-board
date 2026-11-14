@@ -24,13 +24,13 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .meta-date{font-size:12px;color:var(--muted);text-align:right;margin-top:3px;}
 .brand-sub{font-size:10.5px;color:var(--muted);letter-spacing:0.07em;font-weight:500;text-align:right;margin-top:4px;}
 .sec{font-size:10px;font-weight:700;letter-spacing:0.14em;color:var(--muted);text-transform:uppercase;margin:4px 0 3px;padding-bottom:2px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;flex:none;}
-.week-sec > .sec{margin-top:6px;color:var(--ink);}
+.week-sec > .sec{margin-top:4px;color:var(--ink);}
 .stale{display:inline-block;background:var(--gold);color:var(--navy);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;vertical-align:middle;}
 .block{flex:none;}
 .num{font-variant-numeric:tabular-nums;}
 /* Pulse — full master-report rows */
-.pulse{width:100%;border-collapse:collapse;font-size:11.5px;table-layout:fixed;border:1px solid var(--border-dk);font-variant-numeric:tabular-nums;}
-.pulse th,.pulse td{padding:1px 4px;line-height:1.12;}
+.pulse{width:100%;border-collapse:collapse;font-size:11px;table-layout:fixed;border:1px solid var(--border-dk);font-variant-numeric:tabular-nums;}
+.pulse th,.pulse td{padding:0 4px;line-height:1.15;}
 .pulse thead tr{background:var(--navy);}
 .pulse thead th{color:#fff;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-align:center;padding:3px 4px;}
 .pulse thead th.lab{text-align:left;padding-left:10px;color:rgba(255,255,255,.65);width:34%;}
@@ -52,9 +52,9 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .pulse tr.booked th.lab{box-shadow:inset 3px 0 0 var(--gold);}
 /* Week hero */
 .tiles4row{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
-.t4{background:var(--navy);border-radius:7px;padding:4px 9px 5px;color:#fff;}
+.t4{background:var(--navy);border-radius:7px;padding:3px 9px 4px;color:#fff;}
 .t4-l{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold-md);}
-.t4-v{font-family:'DM Serif Display',serif;font-size:26px;color:#fff;line-height:1.05;margin:0;display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;}
+.t4-v{font-family:'DM Serif Display',serif;font-size:24px;color:#fff;line-height:1.05;margin:0;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap;}
 .t4-s{font-size:11px;color:rgba(255,255,255,0.65);margin-top:3px;}
 .chip{display:inline-block;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:0;padding:1px 7px;border-radius:4px;line-height:1.25;position:relative;top:-2px;}
 .chip.up{background:#e8f6ee;color:var(--green);}
@@ -62,8 +62,20 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .pace{margin:3px 0 0;font-size:12px;color:var(--text);}
 .pace b{font-family:'DM Serif Display',serif;font-size:16px;color:var(--ink);font-weight:400;}
 .pace-lw{display:block;font-size:11.5px;color:var(--muted);margin-top:2px;}
-.week-mid{display:grid;grid-template-columns:1fr 200px;gap:6px;align-items:stretch;margin-top:4px;}
+.week-mid{display:grid;grid-template-columns:1fr 168px;gap:6px;align-items:stretch;margin-top:4px;}
 .funnel-wrap{min-width:0;}
+.gtable{width:100%;border-collapse:separate;border-spacing:2px 2px;font-variant-numeric:tabular-nums;}
+.gtable th{font-size:9px;font-weight:700;letter-spacing:0.07em;color:var(--muted);text-transform:uppercase;padding:1px 3px;text-align:center;}
+.gtable tr.gsub th{font-size:8px;letter-spacing:0.04em;font-weight:600;padding:0 2px 2px;}
+.gtable td{padding:0 1px;vertical-align:top;text-align:center;}
+.gtable td.glab{font-family:'DM Serif Display',serif;font-size:14px;color:var(--ink);text-align:left;vertical-align:middle;padding-right:5px;white-space:nowrap;}
+.gtable .gheads{display:block;font-family:'DM Sans',sans-serif;font-size:9px;color:var(--muted);font-weight:600;margin-top:1px;}
+.gtable .gcell{min-width:42px;}
+.gtable .hc{padding:2px 3px;font-size:12px;line-height:1.1;}
+.gtable .gconv{font-size:10px;font-weight:700;color:var(--muted);margin-top:1px;}
+.gtable .gcell.bn .gconv,.gtable .gcell.bn .hc{color:var(--red);}
+.gtable .bn-tag{display:inline-block;margin-top:1px;background:var(--bad);color:#fff;font-size:7.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:1px 4px;border-radius:3px;}
+
 .funnel{display:flex;align-items:stretch;gap:0;}
 .fstep{flex:1;text-align:center;padding:3px 4px 4px;border-radius:7px;background:var(--surface);border:1px solid var(--border-dk);min-width:0;}
 .fstep.green{background:#c8ead4;border-color:#7eb894;}
@@ -78,7 +90,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .fstep.red .f-c,.fstep.bn .f-c{color:var(--bad);}
 .bn-tag{display:inline-block;margin-top:3px;background:var(--bad);color:#fff;font-size:9px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;}
 .farr{flex:none;width:22px;display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:18px;}
-.funnel-focus{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.25;}
+.funnel-focus{font-size:10px;color:var(--muted);margin-top:2px;line-height:1.2;}
 .daychart{border:1px solid var(--border-dk);border-radius:7px;padding:5px 8px 4px;background:var(--surface);display:flex;flex-direction:column;}
 .daychart-h{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
 .daychart-bars{display:flex;align-items:flex-end;justify-content:space-around;gap:5px;flex:1;min-height:64px;}
@@ -88,7 +100,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .dc-d{font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-top:4px;}
 
 .week-cards{display:grid;grid-template-columns:1.15fr 1fr;gap:6px;margin-top:4px;align-items:stretch;}
-.lapc,.mg-card,.ns-card{border:1px solid var(--border-dk);border-radius:7px;padding:4px 8px 4px;background:var(--surface);}
+.lapc,.mg-card,.ns-card{border:1px solid var(--border-dk);border-radius:7px;padding:3px 8px 3px;background:var(--surface);}
 .t4-k{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:3px;}
 .lapt{font-size:12px;margin:0 0 3px;color:var(--text);}
 .lapt b{font-family:'DM Serif Display',serif;font-size:17px;color:var(--ink);font-weight:400;}
@@ -116,28 +128,30 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .mg-dates{display:block;font-size:10px;color:var(--muted);font-weight:500;}
 .ns-card{margin-top:4px;}
 .ns-crit{font-size:10.5px;color:var(--muted);margin:0 0 3px;}
-.nst{width:100%;border-collapse:separate;border-spacing:2px 2px;font-size:12px;font-variant-numeric:tabular-nums;}
-.nst th{font-size:9px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);text-align:center;padding:2px 4px;}
-.nst th:nth-child(1),.nst th:nth-child(2){text-align:left;}
-.nst td{padding:3px 4px;vertical-align:middle;}
-.nst td.num{text-align:center;}
-.nst .ns-name{font-family:'DM Serif Display',serif;font-size:14px;color:var(--ink);padding-left:2px;}
-.nst td.hc{font-size:12px;padding:3px 4px;text-align:center;}
-.nst .evo-td,.nst .chk-td{white-space:nowrap;}
-.nst .st-td{text-align:right;padding-right:2px;}
-.evo-cell{display:flex;align-items:center;gap:5px;white-space:nowrap;}
-.ebar{width:54px;height:7px;background:var(--surface2);border-radius:4px;overflow:hidden;flex:none;}
-.ebar i{display:block;height:100%;background:var(--amber);}
-.evo-cell.go .ebar i{background:var(--green);}
-.evo-cell.am .ebar i{background:var(--amber);}
-.evo-cell.bad .ebar i{background:var(--red);}
-.evo-lab{font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;}
+.ns-list{display:grid;grid-template-columns:1fr 1fr;gap:4px 7px;}
+.ns-row{display:grid;grid-template-columns:148px 1fr auto;gap:5px;align-items:center;background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:3px 6px 3px;}
+.ns-blocks{display:grid;grid-template-columns:1fr 1fr;gap:4px;min-width:0;}
+.ns-name{font-family:'DM Serif Display',serif;font-size:15px;color:var(--ink);line-height:1.05;}
+.ns-meta{font-size:9.5px;color:var(--muted);margin:0 0 2px;}
+.ns-gmini{display:flex;flex-wrap:nowrap;gap:2px;align-items:center;}
+.ns-gmini .hc{display:inline-block;min-width:24px;padding:1px 3px;font-size:10px;font-weight:700;text-align:center;flex:none;}
+.ns-glabs{font-size:7.5px;letter-spacing:0.04em;text-transform:uppercase;color:var(--muted);width:100%;margin-top:1px;}
+.ns-block{border-radius:6px;padding:3px 8px 4px;text-align:left;min-height:0;display:flex;flex-direction:column;justify-content:center;}
+.ns-block.go{background:var(--green-lt);color:var(--green);}
+.ns-block.bad{background:var(--red-lt);color:var(--red);}
+.ns-block.na{background:var(--surface2);color:var(--muted);}
+.ns-bk{font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.85;}
+.ns-bv{font-family:'DM Serif Display',serif;font-size:20px;line-height:1;font-weight:400;display:flex;align-items:baseline;gap:5px;}
+.ns-block .chk{font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;}
+.ns-block.go .ebar,.ns-block.bad .ebar,.ns-block.na .ebar{width:100%;height:5px;margin-top:3px;background:rgba(0,0,0,0.12);border-radius:4px;overflow:hidden;}
+.ns-block .ebar i{display:block;height:100%;}
+.ns-block.go .ebar i{background:var(--green);}
+.ns-block.bad .ebar i{background:var(--red);}
+.ns-row .st-td{text-align:right;}
 .chk{font-weight:700;font-size:14px;line-height:1;}
 .chk.go{color:var(--green);}
-.chk.am{color:var(--amber);}
 .chk.bad{color:var(--red);}
 .chk.na{color:var(--muted);}
-.sales-n{font-weight:700;font-variant-numeric:tabular-nums;}
 .ns-note{font-size:11px;color:var(--muted);margin-top:3px;}
 .pill.passed,.pill.on_track{background:var(--go);color:#fff;}
 .pill.at_risk{background:var(--am);color:var(--navy);}
@@ -150,10 +164,10 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .ca{background:var(--amber-lt);color:var(--amber);}
 .cr{background:var(--red-lt);color:var(--red);}
 .hc{text-align:center;font-weight:700;border-radius:3px;}
-.hm{width:100%;border-collapse:separate;border-spacing:2px 3px;font-variant-numeric:tabular-nums;}
+.hm{width:100%;border-collapse:separate;border-spacing:2px 2px;font-variant-numeric:tabular-nums;}
 .hm th{font-size:9px;font-weight:700;letter-spacing:0.07em;color:var(--muted);text-transform:uppercase;padding:2px 6px;text-align:center;}
 .hm th:nth-child(2),.hm th:nth-child(3){text-align:left;}
-.crew-hm td{padding:3px 5px;vertical-align:middle;}
+.crew-hm td{padding:2px 5px;vertical-align:middle;}
 .crew-hm td.rk{font-family:'DM Serif Display',serif;font-size:18px;color:var(--dim);text-align:center;width:24px;}
 .crew-hm td.rk.gold{color:var(--gold);}
 .crew-hm td.cn{font-family:'DM Serif Display',serif;font-size:16px;color:var(--ink);text-align:left;padding-left:2px;white-space:nowrap;}
@@ -179,7 +193,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .tr-legend i.tw{background:var(--navy);}
 .tr-legend i.lw{background:var(--dim);}
 .tr-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;}
-.tr-card{background:var(--surface);border:1px solid var(--border-dk);border-radius:6px;padding:3px 5px 4px;}
+.tr-card{background:var(--surface);border:1px solid var(--border-dk);border-radius:6px;padding:2px 5px 3px;}
 .tr-k{font-size:9px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}
 .tr-v{font-family:'DM Serif Display',serif;font-size:16px;color:var(--ink);display:flex;align-items:baseline;gap:4px;line-height:1.05;}
 .tr-d{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;}
@@ -187,7 +201,11 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .tr-d.down{color:var(--red);}
 .tr-d.flat{color:var(--muted);}
 .tr-lw{font-size:10px;color:var(--muted);}
-.spark{display:block;width:100%;height:20px;margin:1px 0 1px;}
+.tr-avg{font-size:11px;font-weight:700;color:var(--ink);display:flex;align-items:baseline;flex-wrap:wrap;gap:5px;margin-top:1px;}
+.tr-avg .tr-lw{font-weight:600;}
+.tr-avg .tr-d{font-size:11px;}
+
+.spark{display:block;width:100%;height:18px;margin:0 0 1px;}
 .spark-tw{stroke:var(--navy);stroke-width:2;stroke-linejoin:round;stroke-linecap:round;}
 .spark-lw{stroke:var(--dim);stroke-width:1.4;stroke-dasharray:3 2;stroke-linejoin:round;}
 .spark circle{fill:var(--gold);}
@@ -237,9 +255,9 @@ html[data-theme="dark"] .tr-legend i.tw{background:#d6c48a;}
           
         <div class="trends">
           <div class="tr-h">Trends · Mon 9–Thu 12 Nov vs last week
-            <span class="tr-legend"><i class="tw"></i> this week <i class="lw"></i> last week</span>
+            <span class="tr-legend"><i class="tw"></i> this week <i class="lw"></i> last week · avg / day over the same days</span>
           </div>
-          <div class="tr-grid"><div class="tr-card"><div class="tr-k">Sent to Outreach</div><svg class="spark" viewBox="0 0 120 28" width="120" height="28" aria-hidden="true"><path class="spark-lw" d="M2.0,8.2 L40.7,2.0 L79.3,8.2 L118.0,7.7" fill="none"/><path class="spark-tw" d="M2.0,13.2 L40.7,8.8 L79.3,8.5 L118.0,24.8" fill="none"/><circle cx="2.0" cy="13.2" r="2"/><circle cx="40.7" cy="8.8" r="2"/><circle cx="79.3" cy="8.5" r="2"/><circle cx="118.0" cy="24.8" r="2"/></svg><div class="tr-v">323<span class="tr-d down">▼ 193</span></div><span class="tr-lw">LW 516</span></div><div class="tr-card"><div class="tr-k">Progressed to I1</div><svg class="spark" viewBox="0 0 120 28" width="120" height="28" aria-hidden="true"><path class="spark-lw" d="M2.0,8.7 L40.7,16.8 L79.3,14.6 L118.0,14.3" fill="none"/><path class="spark-tw" d="M2.0,2.0 L40.7,19.9 L79.3,17.9 L118.0,20.1" fill="none"/><circle cx="2.0" cy="2.0" r="2"/><circle cx="40.7" cy="19.9" r="2"/><circle cx="79.3" cy="17.9" r="2"/><circle cx="118.0" cy="20.1" r="2"/></svg><div class="tr-v">158<span class="tr-d down">▼ 20</span></div><span class="tr-lw">LW 178</span></div><div class="tr-card"><div class="tr-k">I1 showed</div><svg class="spark" viewBox="0 0 120 28" width="120" height="28" aria-hidden="true"><path class="spark-lw" d="M2.0,17.2 L40.7,8.9 L79.3,12.1 L118.0,2.0" fill="none"/><path class="spark-tw" d="M2.0,13.4 L40.7,10.8 L79.3,10.2 L118.0,8.9" fill="none"/><circle cx="2.0" cy="13.4" r="2"/><circle cx="40.7" cy="10.8" r="2"/><circle cx="79.3" cy="10.2" r="2"/><circle cx="118.0" cy="8.9" r="2"/></svg><div class="tr-v">96<span class="tr-d down">▼ 5</span></div><span class="tr-lw">LW 101</span></div><div class="tr-card"><div class="tr-k">I3 showed</div><svg class="spark" viewBox="0 0 120 28" width="120" height="28" aria-hidden="true"><path class="spark-lw" d="M2.0,23.0 L40.7,8.0 L79.3,23.0 L118.0,2.0" fill="none"/><path class="spark-tw" d="M2.0,23.0 L40.7,17.0 L79.3,23.0 L118.0,8.0" fill="none"/><circle cx="2.0" cy="23.0" r="2"/><circle cx="40.7" cy="17.0" r="2"/><circle cx="79.3" cy="23.0" r="2"/><circle cx="118.0" cy="8.0" r="2"/></svg><div class="tr-v">11<span class="tr-d down">▼ 5</span></div><span class="tr-lw">LW 16</span></div><div class="tr-card"><div class="tr-k">Onboards</div><svg class="spark" viewBox="0 0 120 28" width="120" height="28" aria-hidden="true"><path class="spark-lw" d="M2.0,26.0 L40.7,2.0 L79.3,26.0 L118.0,2.0" fill="none"/><path class="spark-tw" d="M2.0,26.0 L40.7,10.0 L79.3,26.0 L118.0,26.0" fill="none"/><circle cx="2.0" cy="26.0" r="2"/><circle cx="40.7" cy="10.0" r="2"/><circle cx="79.3" cy="26.0" r="2"/><circle cx="118.0" cy="26.0" r="2"/></svg><div class="tr-v">4<span class="tr-d down">▼ 8</span></div><span class="tr-lw">LW 12</span></div><div class="tr-card"><div class="tr-k">Outreach booked %</div><svg class="spark" viewBox="0 0 120 28" width="120" height="28" aria-hidden="true"><path class="spark-lw" d="M2.0,15.5 L40.7,21.8 L79.3,19.1 L118.0,19.1" fill="none"/><path class="spark-tw" d="M2.0,5.8 L40.7,22.1 L79.3,21.0 L118.0,2.0" fill="none"/><circle cx="2.0" cy="5.8" r="2"/><circle cx="40.7" cy="22.1" r="2"/><circle cx="79.3" cy="21.0" r="2"/><circle cx="118.0" cy="2.0" r="2"/></svg><div class="tr-v">49%<span class="tr-d up">▲ 14 pts</span></div><span class="tr-lw">LW 34%</span></div></div>
+          <div class="tr-grid"><div class="tr-card"><div class="tr-k">Sent to Outreach</div><svg class="spark" viewBox="0 0 120 28" width="120" height="28" aria-hidden="true"><path class="spark-lw" d="M2.0,8.2 L40.7,2.0 L79.3,8.2 L118.0,7.7" fill="none"/><path class="spark-tw" d="M2.0,13.2 L40.7,8.8 L79.3,8.5 L118.0,24.8" fill="none"/><circle cx="2.0" cy="13.2" r="2"/><circle cx="40.7" cy="8.8" r="2"/><circle cx="79.3" cy="8.5" r="2"/><circle cx="118.0" cy="24.8" r="2"/></svg><div class="tr-v">323<span class="tr-d down">▼ 193</span></div><div class="tr-avg">81/day<span class="tr-d down">▼ 48</span><span class="tr-lw">LW 129/d</span></div></div><div class="tr-card"><div class="tr-k">Progressed to I1</div><svg class="spark" viewBox="0 0 120 28" width="120" height="28" aria-hidden="true"><path class="spark-lw" d="M2.0,8.7 L40.7,16.8 L79.3,14.6 L118.0,14.3" fill="none"/><path class="spark-tw" d="M2.0,2.0 L40.7,19.9 L79.3,17.9 L118.0,20.1" fill="none"/><circle cx="2.0" cy="2.0" r="2"/><circle cx="40.7" cy="19.9" r="2"/><circle cx="79.3" cy="17.9" r="2"/><circle cx="118.0" cy="20.1" r="2"/></svg><div class="tr-v">158<span class="tr-d down">▼ 20</span></div><div class="tr-avg">40/day<span class="tr-d down">▼ 5</span><span class="tr-lw">LW 45/d</span></div></div><div class="tr-card"><div class="tr-k">I1 showed</div><svg class="spark" viewBox="0 0 120 28" width="120" height="28" aria-hidden="true"><path class="spark-lw" d="M2.0,17.2 L40.7,8.9 L79.3,12.1 L118.0,2.0" fill="none"/><path class="spark-tw" d="M2.0,13.4 L40.7,10.8 L79.3,10.2 L118.0,8.9" fill="none"/><circle cx="2.0" cy="13.4" r="2"/><circle cx="40.7" cy="10.8" r="2"/><circle cx="79.3" cy="10.2" r="2"/><circle cx="118.0" cy="8.9" r="2"/></svg><div class="tr-v">96<span class="tr-d down">▼ 5</span></div><div class="tr-avg">24/day<span class="tr-d down">▼ 1</span><span class="tr-lw">LW 25/d</span></div></div><div class="tr-card"><div class="tr-k">I3 showed</div><svg class="spark" viewBox="0 0 120 28" width="120" height="28" aria-hidden="true"><path class="spark-lw" d="M2.0,23.0 L40.7,8.0 L79.3,23.0 L118.0,2.0" fill="none"/><path class="spark-tw" d="M2.0,23.0 L40.7,17.0 L79.3,23.0 L118.0,8.0" fill="none"/><circle cx="2.0" cy="23.0" r="2"/><circle cx="40.7" cy="17.0" r="2"/><circle cx="79.3" cy="23.0" r="2"/><circle cx="118.0" cy="8.0" r="2"/></svg><div class="tr-v">11<span class="tr-d down">▼ 5</span></div><div class="tr-avg">2.8/day<span class="tr-d down">▼ 1</span><span class="tr-lw">LW 4.0/d</span></div></div><div class="tr-card"><div class="tr-k">Onboards</div><svg class="spark" viewBox="0 0 120 28" width="120" height="28" aria-hidden="true"><path class="spark-lw" d="M2.0,26.0 L40.7,2.0 L79.3,26.0 L118.0,2.0" fill="none"/><path class="spark-tw" d="M2.0,26.0 L40.7,10.0 L79.3,26.0 L118.0,26.0" fill="none"/><circle cx="2.0" cy="26.0" r="2"/><circle cx="40.7" cy="10.0" r="2"/><circle cx="79.3" cy="26.0" r="2"/><circle cx="118.0" cy="26.0" r="2"/></svg><div class="tr-v">4<span class="tr-d down">▼ 8</span></div><div class="tr-avg">1.0/day<span class="tr-d down">▼ 2</span><span class="tr-lw">LW 3.0/d</span></div></div><div class="tr-card"><div class="tr-k">Outreach booked %</div><svg class="spark" viewBox="0 0 120 28" width="120" height="28" aria-hidden="true"><path class="spark-lw" d="M2.0,15.5 L40.7,21.8 L79.3,19.1 L118.0,19.1" fill="none"/><path class="spark-tw" d="M2.0,5.8 L40.7,22.1 L79.3,21.0 L118.0,2.0" fill="none"/><circle cx="2.0" cy="5.8" r="2"/><circle cx="40.7" cy="22.1" r="2"/><circle cx="79.3" cy="21.0" r="2"/><circle cx="118.0" cy="2.0" r="2"/></svg><div class="tr-v">49%<span class="tr-d up">▲ 14 pts</span></div><div class="tr-avg">4-day rate 49%<span class="tr-d up">▲ 14 pts</span><span class="tr-lw">LW 34%</span></div></div></div>
         </div>
         </section>
     
@@ -250,9 +268,15 @@ html[data-theme="dark"] .tr-legend i.tw{background:#d6c48a;}
           <div class="week-mid">
             
         <div class="funnel-wrap">
-          <div class="nb-h">Average gauges · 5-day / head</div>
-          <div class="funnel"><div class="fstep ok"><div class="f-k">Speaks</div><div class="f-v">76</div></div><div class="farr" aria-hidden="true">→</div><div class="fstep ok"><div class="f-k">ST</div><div class="f-v">15.8</div><div class="f-c">21% vs 25%</div></div><div class="farr" aria-hidden="true">→</div><div class="fstep red bn"><div class="f-k">Pres</div><div class="f-v">8.6</div><div class="f-c">54% vs 75%</div><div class="bn-tag">Bottleneck</div></div><div class="farr" aria-hidden="true">→</div><div class="fstep ok"><div class="f-k">Close</div><div class="f-v">6.6</div><div class="f-c">77% vs 80%</div></div><div class="farr" aria-hidden="true">→</div><div class="fstep green"><div class="f-k">Apps</div><div class="f-v">1.6</div><div class="f-c">25% vs 25%</div></div></div>
-          <div class="funnel-focus">5-day averages vs standard gauge 80/20/15/12/3. 12 of 13 reps under. Focus: Build the relationship in the intro and short story, know something about them before presenting.</div>
+          <div class="nb-h">Average gauges · 5-day and Fri 13 Nov</div>
+          <table class="gtable">
+            <thead>
+              <tr><th></th><th colspan="2">Speaks</th><th colspan="2">ST</th><th colspan="2">Pres</th><th colspan="2">Close</th><th colspan="2">Apps</th></tr>
+              <tr class="gsub"><th></th><th>5-day</th><th>Fri 13</th><th>5-day</th><th>Fri 13</th><th>5-day</th><th>Fri 13</th><th>5-day</th><th>Fri 13</th><th>5-day</th><th>Fri 13</th></tr>
+            </thead>
+            <tbody><tr><td class="glab">Overall<span class="gheads">18 · 13 heads</span></td><td><div class="gcell"><div class="hc cneu">76</div></div></td><td><div class="gcell"><div class="hc cneu">78</div></div></td><td><div class="gcell"><div class="hc cneu">16.5</div><div class="gconv">22%</div></div></td><td><div class="gcell"><div class="hc ca">14.8</div><div class="gconv">19%</div></div></td><td><div class="gcell bn"><div class="hc cr">9.1</div><div class="gconv">55%</div><div class="bn-tag">Bottleneck</div></div></td><td><div class="gcell bn"><div class="hc cr">8.3</div><div class="gconv">56%</div></div></td><td><div class="gcell"><div class="hc cneu">6.8</div><div class="gconv">74%</div></div></td><td><div class="gcell"><div class="hc cneu">5.6</div><div class="gconv">67%</div></div></td><td><div class="gcell"><div class="hc cneu">1.5</div><div class="gconv">23%</div></div></td><td><div class="gcell"><div class="hc cg">1.5</div><div class="gconv">26%</div></div></td></tr><tr><td class="glab">Leaders<span class="gheads">6 · 5 heads</span></td><td><div class="gcell"><div class="hc cg">85</div></div></td><td><div class="gcell"><div class="hc cneu">74</div></div></td><td><div class="gcell"><div class="hc cneu">18.3</div><div class="gconv">22%</div></div></td><td><div class="gcell bn"><div class="hc cr">15.8</div><div class="gconv">21%</div></div></td><td><div class="gcell bn"><div class="hc cr">10.2</div><div class="gconv">56%</div><div class="bn-tag">Bottleneck</div></div></td><td><div class="gcell"><div class="hc cneu">10.2</div><div class="gconv">65%</div></div></td><td><div class="gcell"><div class="hc cg">9.6</div><div class="gconv">95%</div></div></td><td><div class="gcell"><div class="hc cneu">7.6</div><div class="gconv">75%</div></div></td><td><div class="gcell"><div class="hc cneu">2.3</div><div class="gconv">24%</div></div></td><td><div class="gcell"><div class="hc cg">2.4</div><div class="gconv">32%</div></div></td></tr><tr><td class="glab">Stage 1<span class="gheads">12 · 8 heads</span></td><td><div class="gcell"><div class="hc cneu">71</div></div></td><td><div class="gcell"><div class="hc cneu">80</div></div></td><td><div class="gcell"><div class="hc cneu">15.5</div><div class="gconv">22%</div></div></td><td><div class="gcell"><div class="hc ca">14.1</div><div class="gconv">18%</div></div></td><td><div class="gcell bn"><div class="hc cr">8.5</div><div class="gconv">55%</div><div class="bn-tag">Bottleneck</div></div></td><td><div class="gcell bn"><div class="hc cr">7.0</div><div class="gconv">49%</div></div></td><td><div class="gcell"><div class="hc ca">5.1</div><div class="gconv">60%</div></div></td><td><div class="gcell"><div class="hc ca">4.1</div><div class="gconv">59%</div></div></td><td><div class="gcell"><div class="hc cneu">1.1</div><div class="gconv">22%</div></div></td><td><div class="gcell"><div class="hc cneu">0.9</div><div class="gconv">21%</div></div></td></tr></tbody>
+          </table>
+          <div class="funnel-focus">5-day (9 Nov–13 Nov) vs Fri 13 Nov. Bands vs 80/20/15/12/3 and 25/75/80/25%. Weakest 5-day conversion marked <b>Bottleneck</b>.</div>
         </div>
             <div class="daychart"><div class="daychart-h">Office apps by day</div><div class="daychart-bars"><div class="dc"><div class="dc-v">27</div><div class="dc-bar" style="height:100%"></div><div class="dc-d">Mon</div></div><div class="dc"><div class="dc-v">22</div><div class="dc-bar" style="height:81%"></div><div class="dc-d">Tue</div></div><div class="dc"><div class="dc-v">25</div><div class="dc-bar" style="height:93%"></div><div class="dc-d">Wed</div></div><div class="dc"><div class="dc-v">25</div><div class="dc-bar" style="height:93%"></div><div class="dc-d">Thu</div></div><div class="dc"><div class="dc-v">19</div><div class="dc-bar" style="height:70%"></div><div class="dc-d">Fri</div></div></div></div>
           </div>
@@ -281,14 +305,7 @@ html[data-theme="dark"] .tr-legend i.tw{background:#d6c48a;}
         <div class="ns-card">
           <div class="t4-k">New starters — Week 1</div>
           <div class="ns-crit">Pass: Evo ≥90% and 3 sales by Friday morning (Mon–Thu). · Evo as of Sat 14 Nov 07:28 Europe/London</div>
-          <table class="nst">
-            <thead><tr>
-              <th>Name</th><th>Start</th><th>Days</th>
-              <th>Speaks</th><th>ST</th><th>Pres</th><th>Close</th><th>Apps</th>
-              <th>Evo</th><th>Mon–Thu</th><th>Status</th>
-            </tr></thead>
-            <tbody><tr><td class="ns-name">Anjali</td><td>Mon 9 Nov</td><td class="num">2</td><td class="hc cneu">—</td><td class="hc cneu">—</td><td class="hc cneu">—</td><td class="hc cneu">—</td><td class="hc cr">0.5</td><td class="evo-td"><div class="evo-cell bad"><div class="ebar"><i style="width:0%"></i></div><span class="chk bad">✗</span><span class="evo-lab">0%</span></div></td><td class="chk-td"><span class="chk bad">✗</span> <span class="sales-n">1/3</span></td><td class="st-td"><span class="pill failed">Off track/Failed</span></td></tr><tr><td class="ns-name">Carmine</td><td>Mon 9 Nov</td><td class="num">5</td><td class="hc cneu">64</td><td class="hc cr">9.5</td><td class="hc cr">5.5</td><td class="hc cr">2.8</td><td class="hc cr">0.4</td><td class="evo-td"><div class="evo-cell bad"><div class="ebar"><i style="width:0%"></i></div><span class="chk bad">✗</span><span class="evo-lab">0%</span></div></td><td class="chk-td"><span class="chk bad">✗</span> <span class="sales-n">2/3</span></td><td class="st-td"><span class="pill failed">Off track/Failed</span></td></tr><tr><td class="ns-name">Lily</td><td>Mon 9 Nov</td><td class="num">0</td><td class="hc cneu">—</td><td class="hc cneu">—</td><td class="hc cneu">—</td><td class="hc cneu">—</td><td class="hc cneu">—</td><td class="evo-td"><div class="evo-cell na"><span class="chk na">?</span><span class="evo-lab">Evo ?</span></div></td><td class="chk-td"><span class="chk bad">✗</span> <span class="sales-n">0/3</span></td><td class="st-td"><span class="pill failed">Off track/Failed</span></td></tr><tr><td class="ns-name">Mohammad</td><td>Mon 9 Nov</td><td class="num">5</td><td class="hc cr">43</td><td class="hc cr">8.2</td><td class="hc cr">3.8</td><td class="hc cr">1.0</td><td class="hc cr">0.4</td><td class="evo-td"><div class="evo-cell bad"><div class="ebar"><i style="width:3%"></i></div><span class="chk bad">✗</span><span class="evo-lab">3%</span></div></td><td class="chk-td"><span class="chk bad">✗</span> <span class="sales-n">2/3</span></td><td class="st-td"><span class="pill failed">Off track/Failed</span></td></tr><tr><td class="ns-name">Oliver</td><td>Mon 9 Nov</td><td class="num">5</td><td class="hc cneu">65</td><td class="hc cr">7.6</td><td class="hc cr">4.6</td><td class="hc cr">3.0</td><td class="hc cr">1.2</td><td class="evo-td"><div class="evo-cell am"><div class="ebar"><i style="width:51%"></i></div><span class="chk am">✗</span><span class="evo-lab">51%</span></div></td><td class="chk-td"><span class="chk go">✓</span> <span class="sales-n">6/3</span></td><td class="st-td"><span class="pill at_risk">At risk</span></td></tr><tr><td class="ns-name">Yaesha</td><td>Mon 9 Nov</td><td class="num">5</td><td class="hc ca">56</td><td class="hc cr">10.7</td><td class="hc cr">6.7</td><td class="hc cr">3.3</td><td class="hc cr">0.6</td><td class="evo-td"><div class="evo-cell go"><div class="ebar"><i style="width:90%"></i></div><span class="chk go">✓</span><span class="evo-lab">90%</span></div></td><td class="chk-td"><span class="chk bad">✗</span> <span class="sales-n">2/3</span></td><td class="st-td"><span class="pill at_risk">At risk</span></td></tr></tbody>
-          </table>
+          <div class="ns-list"><div class="ns-row"><div class="ns-who"><div class="ns-name">Anjali</div><div class="ns-meta">Mon 9 Nov · 2 days</div><div class="ns-gmini"><span class="hc cneu">—</span><span class="hc cneu">—</span><span class="hc cneu">—</span><span class="hc cneu">—</span><span class="hc cr">0.5</span></div></div><div class="ns-blocks"><div class="ns-block bad"><div class="ns-bk">Evo</div><div class="ns-bv">0%<span class="chk bad">✗</span></div><div class="ebar"><i style="width:0%"></i></div></div><div class="ns-block bad"><div class="ns-bk">Sales by Friday</div><div class="ns-bv">1 / 3<span class="chk bad">✗</span></div></div></div><div class="st-td"><span class="pill failed">Off track/Failed</span></div></div><div class="ns-row"><div class="ns-who"><div class="ns-name">Carmine</div><div class="ns-meta">Mon 9 Nov · 5 days</div><div class="ns-gmini"><span class="hc cneu">64</span><span class="hc cr">9.5</span><span class="hc cr">5.5</span><span class="hc cr">2.8</span><span class="hc cr">0.4</span></div></div><div class="ns-blocks"><div class="ns-block bad"><div class="ns-bk">Evo</div><div class="ns-bv">0%<span class="chk bad">✗</span></div><div class="ebar"><i style="width:0%"></i></div></div><div class="ns-block bad"><div class="ns-bk">Sales by Friday</div><div class="ns-bv">2 / 3<span class="chk bad">✗</span></div></div></div><div class="st-td"><span class="pill failed">Off track/Failed</span></div></div><div class="ns-row"><div class="ns-who"><div class="ns-name">Lily</div><div class="ns-meta">Mon 9 Nov · 0 days</div><div class="ns-gmini"><span class="hc cneu">—</span><span class="hc cneu">—</span><span class="hc cneu">—</span><span class="hc cneu">—</span><span class="hc cneu">—</span></div></div><div class="ns-blocks"><div class="ns-block na"><div class="ns-bk">Evo</div><div class="ns-bv">Evo ?</div></div><div class="ns-block bad"><div class="ns-bk">Sales by Friday</div><div class="ns-bv">0 / 3<span class="chk bad">✗</span></div></div></div><div class="st-td"><span class="pill failed">Off track/Failed</span></div></div><div class="ns-row"><div class="ns-who"><div class="ns-name">Mohammad</div><div class="ns-meta">Mon 9 Nov · 5 days</div><div class="ns-gmini"><span class="hc cr">43</span><span class="hc cr">8.2</span><span class="hc cr">3.8</span><span class="hc cr">1.0</span><span class="hc cr">0.4</span></div></div><div class="ns-blocks"><div class="ns-block bad"><div class="ns-bk">Evo</div><div class="ns-bv">3%<span class="chk bad">✗</span></div><div class="ebar"><i style="width:3%"></i></div></div><div class="ns-block bad"><div class="ns-bk">Sales by Friday</div><div class="ns-bv">2 / 3<span class="chk bad">✗</span></div></div></div><div class="st-td"><span class="pill failed">Off track/Failed</span></div></div><div class="ns-row"><div class="ns-who"><div class="ns-name">Oliver</div><div class="ns-meta">Mon 9 Nov · 5 days</div><div class="ns-gmini"><span class="hc cneu">65</span><span class="hc cr">7.6</span><span class="hc cr">4.6</span><span class="hc cr">3.0</span><span class="hc cr">1.2</span></div></div><div class="ns-blocks"><div class="ns-block bad"><div class="ns-bk">Evo</div><div class="ns-bv">51%<span class="chk bad">✗</span></div><div class="ebar"><i style="width:51%"></i></div></div><div class="ns-block go"><div class="ns-bk">Sales by Friday</div><div class="ns-bv">6 / 3<span class="chk go">✓</span></div></div></div><div class="st-td"><span class="pill at_risk">At risk</span></div></div><div class="ns-row"><div class="ns-who"><div class="ns-name">Yaesha</div><div class="ns-meta">Mon 9 Nov · 5 days</div><div class="ns-gmini"><span class="hc ca">56</span><span class="hc cr">10.7</span><span class="hc cr">6.7</span><span class="hc cr">3.3</span><span class="hc cr">0.6</span></div></div><div class="ns-blocks"><div class="ns-block go"><div class="ns-bk">Evo</div><div class="ns-bv">90%<span class="chk go">✓</span></div><div class="ebar"><i style="width:90%"></i></div></div><div class="ns-block bad"><div class="ns-bk">Sales by Friday</div><div class="ns-bv">2 / 3<span class="chk bad">✗</span></div></div></div><div class="st-td"><span class="pill at_risk">At risk</span></div></div></div>
           <div class="ns-note">Evo not on the Start or Inactive lists: Lily.</div>
         </div>
           
