@@ -64,17 +64,27 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .pace-lw{display:block;font-size:11.5px;color:var(--muted);margin-top:2px;}
 .week-mid{display:grid;grid-template-columns:1fr 168px;gap:6px;align-items:stretch;margin-top:4px;}
 .funnel-wrap{min-width:0;}
-.gtable{width:100%;border-collapse:separate;border-spacing:2px 2px;font-variant-numeric:tabular-nums;}
-.gtable th{font-size:9px;font-weight:700;letter-spacing:0.07em;color:var(--muted);text-transform:uppercase;padding:1px 3px;text-align:center;}
-.gtable tr.gsub th{font-size:8px;letter-spacing:0.04em;font-weight:600;padding:0 2px 2px;}
-.gtable td{padding:0 1px;vertical-align:top;text-align:center;}
-.gtable td.glab{font-family:'DM Serif Display',serif;font-size:14px;color:var(--ink);text-align:left;vertical-align:middle;padding-right:5px;white-space:nowrap;}
+.gtables{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:start;}
+.gtable-block .gt-h{font-family:'DM Serif Display',serif;font-size:15px;color:var(--ink);line-height:1.1;margin:0 0 2px;}
+.gtable{width:100%;border-collapse:separate;border-spacing:0;font-variant-numeric:tabular-nums;border:1px solid var(--border-dk);border-radius:7px;overflow:hidden;}
+.gtable th,.gtable td{text-align:center;vertical-align:middle;}
+.gtable thead th.gcol{padding:0;background:transparent;}
+.gtable .gh-block{font-size:9.5px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink);padding:4px 4px 3px;border-bottom:2px solid var(--navy);}
+.gtable .gcol-st .gh-block,.gtable .gcol-close .gh-block{border-bottom-color:var(--gold);}
+.gtable th.glab,.gtable td.glab{font-family:'DM Serif Display',serif;font-size:13px;color:var(--ink);text-align:left;padding:3px 6px;white-space:nowrap;background:var(--bg);width:72px;}
 .gtable .gheads{display:block;font-family:'DM Sans',sans-serif;font-size:9px;color:var(--muted);font-weight:600;margin-top:1px;}
-.gtable .gcell{min-width:42px;}
-.gtable .hc{padding:2px 3px;font-size:12px;line-height:1.1;}
-.gtable .gconv{font-size:10px;font-weight:700;color:var(--muted);margin-top:1px;}
+.gtable td.gcol{padding:2px 3px 3px;border-left:1px solid var(--border);}
+.gtable thead th.gcol{border-left:1px solid var(--border);}
+.gtable th.gcol-speaks,.gtable td.gcol-speaks,
+.gtable th.gcol-pres,.gtable td.gcol-pres,
+.gtable th.gcol-apps,.gtable td.gcol-apps{background:var(--navy-lt);}
+.gtable th.gcol-st,.gtable td.gcol-st,
+.gtable th.gcol-close,.gtable td.gcol-close{background:var(--gold-lt);}
+.gtable .gcell{min-width:54px;}
+.gtable .hc{padding:2px 5px;font-size:13px;line-height:1.1;}
+.gtable .gconv{font-size:11px;font-weight:700;color:var(--ink);margin-top:1px;opacity:0.85;}
 .gtable .gcell.bn .gconv,.gtable .gcell.bn .hc{color:var(--red);}
-.gtable .bn-tag{display:inline-block;margin-top:1px;background:var(--bad);color:#fff;font-size:7.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:1px 4px;border-radius:3px;}
+.gtable .bn-tag{display:inline-block;margin-top:1px;background:var(--bad);color:#fff;font-size:7px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:1px 4px;border-radius:3px;}
 
 .funnel{display:flex;align-items:stretch;gap:0;}
 .fstep{flex:1;text-align:center;padding:3px 4px 4px;border-radius:7px;background:var(--surface);border:1px solid var(--border-dk);min-width:0;}
@@ -268,15 +278,22 @@ html[data-theme="dark"] .tr-legend i.tw{background:#d6c48a;}
           <div class="week-mid">
             
         <div class="funnel-wrap">
-          <div class="nb-h">Average gauges · 5-day and Fri 13 Nov</div>
+          <div class="gtables">
+        <div class="gtable-block">
+          <div class="gt-h">5-day average (9–13 Nov)</div>
           <table class="gtable">
-            <thead>
-              <tr><th></th><th colspan="2">Speaks</th><th colspan="2">ST</th><th colspan="2">Pres</th><th colspan="2">Close</th><th colspan="2">Apps</th></tr>
-              <tr class="gsub"><th></th><th>5-day</th><th>Fri 13</th><th>5-day</th><th>Fri 13</th><th>5-day</th><th>Fri 13</th><th>5-day</th><th>Fri 13</th><th>5-day</th><th>Fri 13</th></tr>
-            </thead>
-            <tbody><tr><td class="glab">Overall<span class="gheads">18 · 13 heads</span></td><td><div class="gcell"><div class="hc cneu">76</div></div></td><td><div class="gcell"><div class="hc cneu">78</div></div></td><td><div class="gcell"><div class="hc cneu">16.5</div><div class="gconv">22%</div></div></td><td><div class="gcell"><div class="hc ca">14.8</div><div class="gconv">19%</div></div></td><td><div class="gcell bn"><div class="hc cr">9.1</div><div class="gconv">55%</div><div class="bn-tag">Bottleneck</div></div></td><td><div class="gcell bn"><div class="hc cr">8.3</div><div class="gconv">56%</div></div></td><td><div class="gcell"><div class="hc cneu">6.8</div><div class="gconv">74%</div></div></td><td><div class="gcell"><div class="hc cneu">5.6</div><div class="gconv">67%</div></div></td><td><div class="gcell"><div class="hc cneu">1.5</div><div class="gconv">23%</div></div></td><td><div class="gcell"><div class="hc cg">1.5</div><div class="gconv">26%</div></div></td></tr><tr><td class="glab">Leaders<span class="gheads">6 · 5 heads</span></td><td><div class="gcell"><div class="hc cg">85</div></div></td><td><div class="gcell"><div class="hc cneu">74</div></div></td><td><div class="gcell"><div class="hc cneu">18.3</div><div class="gconv">22%</div></div></td><td><div class="gcell bn"><div class="hc cr">15.8</div><div class="gconv">21%</div></div></td><td><div class="gcell bn"><div class="hc cr">10.2</div><div class="gconv">56%</div><div class="bn-tag">Bottleneck</div></div></td><td><div class="gcell"><div class="hc cneu">10.2</div><div class="gconv">65%</div></div></td><td><div class="gcell"><div class="hc cg">9.6</div><div class="gconv">95%</div></div></td><td><div class="gcell"><div class="hc cneu">7.6</div><div class="gconv">75%</div></div></td><td><div class="gcell"><div class="hc cneu">2.3</div><div class="gconv">24%</div></div></td><td><div class="gcell"><div class="hc cg">2.4</div><div class="gconv">32%</div></div></td></tr><tr><td class="glab">Stage 1<span class="gheads">12 · 8 heads</span></td><td><div class="gcell"><div class="hc cneu">71</div></div></td><td><div class="gcell"><div class="hc cneu">80</div></div></td><td><div class="gcell"><div class="hc cneu">15.5</div><div class="gconv">22%</div></div></td><td><div class="gcell"><div class="hc ca">14.1</div><div class="gconv">18%</div></div></td><td><div class="gcell bn"><div class="hc cr">8.5</div><div class="gconv">55%</div><div class="bn-tag">Bottleneck</div></div></td><td><div class="gcell bn"><div class="hc cr">7.0</div><div class="gconv">49%</div></div></td><td><div class="gcell"><div class="hc ca">5.1</div><div class="gconv">60%</div></div></td><td><div class="gcell"><div class="hc ca">4.1</div><div class="gconv">59%</div></div></td><td><div class="gcell"><div class="hc cneu">1.1</div><div class="gconv">22%</div></div></td><td><div class="gcell"><div class="hc cneu">0.9</div><div class="gconv">21%</div></div></td></tr></tbody>
+            <thead><tr><th class="glab"></th><th class="gcol gcol-speaks"><div class="gh-block">Speaks</div></th><th class="gcol gcol-st"><div class="gh-block">Speed tests</div></th><th class="gcol gcol-pres"><div class="gh-block">Pres</div></th><th class="gcol gcol-close"><div class="gh-block">Close</div></th><th class="gcol gcol-apps"><div class="gh-block">Apps / hd</div></th></tr></thead>
+            <tbody><tr><td class="glab">Overall<span class="gheads">18 heads</span></td><td class="gcol gcol-speaks"><div class="gcell"><div class="hc cneu">76</div></div></td><td class="gcol gcol-st"><div class="gcell"><div class="hc cneu">16.5</div><div class="gconv">22%</div></div></td><td class="gcol gcol-pres"><div class="gcell bn"><div class="hc cr">9.1</div><div class="gconv">55%</div><div class="bn-tag">Bottleneck</div></div></td><td class="gcol gcol-close"><div class="gcell"><div class="hc cneu">6.8</div><div class="gconv">74%</div></div></td><td class="gcol gcol-apps"><div class="gcell"><div class="hc cneu">1.5</div><div class="gconv">23%</div></div></td></tr><tr><td class="glab">Leaders<span class="gheads">6 heads</span></td><td class="gcol gcol-speaks"><div class="gcell"><div class="hc cg">85</div></div></td><td class="gcol gcol-st"><div class="gcell"><div class="hc cneu">18.3</div><div class="gconv">22%</div></div></td><td class="gcol gcol-pres"><div class="gcell bn"><div class="hc cr">10.2</div><div class="gconv">56%</div><div class="bn-tag">Bottleneck</div></div></td><td class="gcol gcol-close"><div class="gcell"><div class="hc cg">9.6</div><div class="gconv">95%</div></div></td><td class="gcol gcol-apps"><div class="gcell"><div class="hc cneu">2.3</div><div class="gconv">24%</div></div></td></tr><tr><td class="glab">Stage 1<span class="gheads">12 heads</span></td><td class="gcol gcol-speaks"><div class="gcell"><div class="hc cneu">71</div></div></td><td class="gcol gcol-st"><div class="gcell"><div class="hc cneu">15.5</div><div class="gconv">22%</div></div></td><td class="gcol gcol-pres"><div class="gcell bn"><div class="hc cr">8.5</div><div class="gconv">55%</div><div class="bn-tag">Bottleneck</div></div></td><td class="gcol gcol-close"><div class="gcell"><div class="hc ca">5.1</div><div class="gconv">60%</div></div></td><td class="gcol gcol-apps"><div class="gcell"><div class="hc cneu">1.1</div><div class="gconv">22%</div></div></td></tr></tbody>
           </table>
-          <div class="funnel-focus">5-day (9 Nov–13 Nov) vs Fri 13 Nov. Bands vs 80/20/15/12/3 and 25/75/80/25%. Weakest 5-day conversion marked <b>Bottleneck</b>.</div>
+        </div>
+        <div class="gtable-block">
+          <div class="gt-h">Yesterday — Fri 13 Nov</div>
+          <table class="gtable">
+            <thead><tr><th class="glab"></th><th class="gcol gcol-speaks"><div class="gh-block">Speaks</div></th><th class="gcol gcol-st"><div class="gh-block">Speed tests</div></th><th class="gcol gcol-pres"><div class="gh-block">Pres</div></th><th class="gcol gcol-close"><div class="gh-block">Close</div></th><th class="gcol gcol-apps"><div class="gh-block">Apps / hd</div></th></tr></thead>
+            <tbody><tr><td class="glab">Overall<span class="gheads">13 heads</span></td><td class="gcol gcol-speaks"><div class="gcell"><div class="hc cneu">78</div></div></td><td class="gcol gcol-st"><div class="gcell"><div class="hc ca">14.8</div><div class="gconv">19%</div></div></td><td class="gcol gcol-pres"><div class="gcell bn"><div class="hc cr">8.3</div><div class="gconv">56%</div><div class="bn-tag">Bottleneck</div></div></td><td class="gcol gcol-close"><div class="gcell"><div class="hc cneu">5.6</div><div class="gconv">67%</div></div></td><td class="gcol gcol-apps"><div class="gcell"><div class="hc cg">1.5</div><div class="gconv">26%</div></div></td></tr><tr><td class="glab">Leaders<span class="gheads">5 heads</span></td><td class="gcol gcol-speaks"><div class="gcell"><div class="hc cneu">74</div></div></td><td class="gcol gcol-st"><div class="gcell bn"><div class="hc cr">15.8</div><div class="gconv">21%</div><div class="bn-tag">Bottleneck</div></div></td><td class="gcol gcol-pres"><div class="gcell"><div class="hc cneu">10.2</div><div class="gconv">65%</div></div></td><td class="gcol gcol-close"><div class="gcell"><div class="hc cneu">7.6</div><div class="gconv">75%</div></div></td><td class="gcol gcol-apps"><div class="gcell"><div class="hc cg">2.4</div><div class="gconv">32%</div></div></td></tr><tr><td class="glab">Stage 1<span class="gheads">8 heads</span></td><td class="gcol gcol-speaks"><div class="gcell"><div class="hc cneu">80</div></div></td><td class="gcol gcol-st"><div class="gcell"><div class="hc ca">14.1</div><div class="gconv">18%</div></div></td><td class="gcol gcol-pres"><div class="gcell bn"><div class="hc cr">7.0</div><div class="gconv">49%</div><div class="bn-tag">Bottleneck</div></div></td><td class="gcol gcol-close"><div class="gcell"><div class="hc ca">4.1</div><div class="gconv">59%</div></div></td><td class="gcol gcol-apps"><div class="gcell"><div class="hc cneu">0.9</div><div class="gconv">21%</div></div></td></tr></tbody>
+          </table>
+        </div></div>
+          <div class="funnel-focus">Per head. Bands vs 80/20/15/12/3 and ST 25%, Pres 75%, Close 80%, Apps 25%. Weakest conversion on each row is marked <b>Bottleneck</b>.</div>
         </div>
             <div class="daychart"><div class="daychart-h">Office apps by day</div><div class="daychart-bars"><div class="dc"><div class="dc-v">27</div><div class="dc-bar" style="height:100%"></div><div class="dc-d">Mon</div></div><div class="dc"><div class="dc-v">22</div><div class="dc-bar" style="height:81%"></div><div class="dc-d">Tue</div></div><div class="dc"><div class="dc-v">25</div><div class="dc-bar" style="height:93%"></div><div class="dc-d">Wed</div></div><div class="dc"><div class="dc-v">25</div><div class="dc-bar" style="height:93%"></div><div class="dc-d">Thu</div></div><div class="dc"><div class="dc-v">19</div><div class="dc-bar" style="height:70%"></div><div class="dc-d">Fri</div></div></div></div>
           </div>
