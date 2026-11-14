@@ -17,20 +17,20 @@
 html,body{width:100%;height:100%;background:var(--navy);overflow:hidden;}
 body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .stage-wrap{width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;}
-.stage{width:1080px;height:1920px;background:var(--bg);color:var(--text);flex:none;transform-origin:center center;overflow:hidden;display:flex;flex-direction:column;padding:14px 22px 8px;}
-.hdr{display:flex;justify-content:space-between;align-items:center;padding-bottom:8px;border-bottom:2px solid var(--navy);flex:none;}
-.hdr img{height:44px;width:auto;display:block;}
+.stage{width:1080px;height:1920px;background:var(--bg);color:var(--text);flex:none;transform-origin:center center;overflow:hidden;display:flex;flex-direction:column;padding:10px 20px 6px;}
+.hdr{display:flex;justify-content:space-between;align-items:center;padding-bottom:6px;border-bottom:2px solid var(--navy);flex:none;}
+.hdr img{height:40px;width:auto;display:block;}
 .meta-day{font-family:'DM Serif Display',serif;font-size:24px;color:var(--navy);text-align:right;line-height:1.1;}
 .meta-date{font-size:12px;color:var(--muted);text-align:right;margin-top:3px;}
 .brand-sub{font-size:10.5px;color:var(--muted);letter-spacing:0.07em;font-weight:500;text-align:right;margin-top:4px;}
-.sec{font-size:10.5px;font-weight:700;letter-spacing:0.14em;color:var(--muted);text-transform:uppercase;margin:8px 0 5px;padding-bottom:4px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;flex:none;}
+.sec{font-size:10.5px;font-weight:700;letter-spacing:0.14em;color:var(--muted);text-transform:uppercase;margin:6px 0 4px;padding-bottom:3px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;flex:none;}
 .week-sec > .sec{margin-top:10px;color:var(--navy);}
 .stale{display:inline-block;background:var(--gold);color:var(--navy);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;vertical-align:middle;}
 .block{flex:none;}
 .num{font-variant-numeric:tabular-nums;}
 /* Pulse — full master-report rows */
 .pulse{width:100%;border-collapse:collapse;font-size:12.5px;table-layout:fixed;border:1px solid var(--border-dk);font-variant-numeric:tabular-nums;}
-.pulse th,.pulse td{padding:3px 5px;line-height:1.2;}
+.pulse th,.pulse td{padding:2px 5px;line-height:1.15;}
 .pulse thead tr{background:var(--navy);}
 .pulse thead th{color:#fff;font-size:10.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-align:center;padding:5px 4px;}
 .pulse thead th.lab{text-align:left;padding-left:10px;color:rgba(255,255,255,.65);width:34%;}
@@ -52,33 +52,33 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .pulse tr.booked th.lab{box-shadow:inset 3px 0 0 var(--gold);}
 /* Week hero */
 .tiles4row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
-.t4{background:var(--navy);border-radius:8px;padding:8px 12px 8px;color:#fff;}
+.t4{background:var(--navy);border-radius:8px;padding:6px 10px 6px;color:#fff;}
 .t4-l{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold-md);}
-.t4-v{font-family:'DM Serif Display',serif;font-size:34px;color:#fff;line-height:1.1;margin:0;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;}
+.t4-v{font-family:'DM Serif Display',serif;font-size:30px;color:#fff;line-height:1.08;margin:0;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;}
 .t4-s{font-size:11px;color:rgba(255,255,255,0.65);margin-top:3px;}
 .chip{display:inline-block;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:0;padding:1px 7px;border-radius:4px;line-height:1.25;position:relative;top:-2px;}
 .chip.up{background:#e8f6ee;color:var(--green);}
 .chip.down{background:var(--red-lt);color:var(--red);}
-.pace{margin:7px 0 0;font-size:13.5px;color:var(--text);}
+.pace{margin:4px 0 0;font-size:13px;color:var(--text);}
 .pace b{font-family:'DM Serif Display',serif;font-size:18px;color:var(--navy);font-weight:400;}
 .pace-lw{display:block;font-size:11.5px;color:var(--muted);margin-top:2px;}
-.week-mid{display:grid;grid-template-columns:1fr 230px;gap:10px;align-items:stretch;margin-top:8px;}
+.week-mid{display:grid;grid-template-columns:1fr 220px;gap:8px;align-items:stretch;margin-top:6px;}
 .funnel-wrap{min-width:0;}
 .funnel{display:flex;align-items:stretch;gap:0;}
-.fstep{flex:1;text-align:center;padding:6px 6px 7px;border-radius:8px;background:var(--surface);border:1px solid var(--border-dk);min-width:0;}
+.fstep{flex:1;text-align:center;padding:4px 5px 5px;border-radius:8px;background:var(--surface);border:1px solid var(--border-dk);min-width:0;}
 .fstep.green{background:#c8ead4;border-color:#7eb894;}
 .fstep.ok{background:var(--ok-lt);border-color:#c5d6cb;}
 .fstep.amber{background:var(--am-lt);border-color:#ecd89a;}
 .fstep.red,.fstep.bn{background:var(--bad-lt);border-color:#e8b4ae;}
 .fstep.bn{box-shadow:inset 0 0 0 2px var(--bad);}
 .f-k{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);}
-.f-v{font-family:'DM Serif Display',serif;font-size:28px;color:var(--navy);line-height:1.05;margin:1px 0 0;}
+.f-v{font-family:'DM Serif Display',serif;font-size:24px;color:var(--navy);line-height:1.05;margin:0;}
 .fstep.red .f-v,.fstep.bn .f-v{color:var(--bad);}
 .f-c{font-size:12.5px;font-weight:700;color:var(--navy);margin-top:1px;}
 .fstep.red .f-c,.fstep.bn .f-c{color:var(--bad);}
 .bn-tag{display:inline-block;margin-top:3px;background:var(--bad);color:#fff;font-size:9px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;}
 .farr{flex:none;width:22px;display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:18px;}
-.funnel-focus{font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.3;}
+.funnel-focus{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.25;}
 .daychart{border:1px solid var(--border-dk);border-radius:8px;padding:8px 10px 6px;background:var(--surface);display:flex;flex-direction:column;}
 .daychart-h{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
 .daychart-bars{display:flex;align-items:flex-end;justify-content:space-around;gap:6px;flex:1;min-height:86px;}
@@ -86,50 +86,71 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
 .dc-v{font-family:'DM Serif Display',serif;font-size:16px;color:var(--navy);line-height:1;margin-bottom:3px;}
 .dc-bar{width:100%;max-width:36px;background:var(--navy);border-radius:3px 3px 0 0;}
 .dc-d{font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-top:4px;}
-.lapw{margin-top:8px;}
-.lap-row{display:grid;grid-template-columns:78px 1fr auto;gap:8px;align-items:center;}
-.lap-row + .lap-row{margin-top:5px;}
-.lap-k{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);}
-.lap-n{font-size:11px;color:var(--muted);white-space:nowrap;}
-.stack{display:flex;width:100%;height:38px;border-radius:6px;overflow:hidden;}
-.stack .seg{display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;min-width:0;padding:0 6px;}
-.stack .seg span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.stack .l1{background:var(--lap1);color:#fff;}
-.stack .l2{background:var(--lap2);color:var(--navy);}
-.stack .l3{background:var(--lap3);color:#fff;}
-.stack.lw{height:20px;}
-.stack.lw .seg{font-size:11px;font-weight:600;}
-.lap-legend{display:flex;gap:14px;margin-top:4px;font-size:11px;color:var(--muted);padding-left:86px;}
-.lap-legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px;}
-.lap-legend i.l1{background:var(--lap1);}
-.lap-legend i.l2{background:var(--lap2);}
-.lap-legend i.l3{background:var(--lap3);}
-.nb-h{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--navy);margin:0 0 5px;}
-.lb-wrap{margin-top:8px;}
-.lb{display:flex;flex-direction:column;gap:5px;}
-.crew-row{display:grid;grid-template-columns:36px 1fr;gap:8px;align-items:center;}
-.crew-row .rk{font-family:'DM Serif Display',serif;font-size:26px;color:var(--dim);text-align:center;line-height:1;}
+
+.week-cards{display:grid;grid-template-columns:1.15fr 1fr;gap:8px;margin-top:6px;align-items:stretch;}
+.lapc,.mg-card,.ns-card{border:1px solid var(--border-dk);border-radius:8px;padding:6px 10px 6px;background:var(--surface);}
+.t4-k{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:3px;}
+.lapt{font-size:12.5px;margin:1px 0 4px;color:var(--text);}
+.lapt b{font-family:'DM Serif Display',serif;font-size:20px;color:var(--navy);font-weight:400;}
+.lbar{display:flex;height:20px;border-radius:5px;overflow:hidden;background:var(--surface2);margin-bottom:4px;}
+.lseg{color:#fff;font-size:12px;font-weight:700;text-align:center;line-height:20px;}
+.l1{background:var(--navy);}
+.l2{background:#5a6a93;}
+.l3{background:#b8982a;color:var(--navy);}
+.lt{width:100%;border-collapse:collapse;font-size:12.5px;font-variant-numeric:tabular-nums;}
+.lt th{font-size:10px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:0.06em;text-align:center;padding:2px 4px;}
+.lt td{text-align:center;padding:2px 4px;}
+.lt td:first-child{text-align:left;color:var(--muted);font-weight:600;}
+.ltlw td{color:var(--muted);font-size:12px;border-top:1px dashed var(--border);}
+.lap-sub{font-size:11px;color:var(--muted);margin-top:3px;}
+.mg-card{border-left:3px solid var(--am);}
+.mg-today{font-size:13.5px;color:var(--navy);line-height:1.35;padding:4px 0 6px;}
+.mg-today b{font-weight:700;}
+.mg-today:not(.ok){color:var(--bad);}
+.mg-tag{display:inline-block;background:var(--bad);color:#fff;font-size:9.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;margin-right:6px;}
+.mg-h{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin:2px 0 4px;}
+.mg-week{display:flex;flex-wrap:wrap;gap:5px;}
+.mg-pill{display:inline-block;background:var(--am-lt);color:var(--navy);border:1px solid #ecd89a;border-radius:6px;padding:3px 7px;font-size:12px;line-height:1.2;}
+.mg-pill.d2,.mg-pill.d3{background:var(--bad-lt);border-color:#e8b4ae;}
+.mg-pill.d3 b{color:var(--bad);}
+.mg-dates{display:block;font-size:10px;color:var(--muted);font-weight:500;}
+.ns-card{margin-top:6px;}
+.ns-crit{font-size:10.5px;color:var(--muted);margin:0 0 3px;}
+.nst{width:100%;border-collapse:collapse;font-size:12.5px;font-variant-numeric:tabular-nums;}
+.nst th{font-size:9.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:3px 6px 3px 0;border-bottom:1px solid var(--border-dk);}
+.nst td{padding:3px 6px 3px 0;border-bottom:1px solid var(--border);vertical-align:middle;}
+.nst td.num{text-align:center;}
+.nst .ns-name{font-family:'DM Serif Display',serif;font-size:16px;color:var(--navy);}
+.nst .ns-g{font-size:11.5px;color:var(--muted);}
+.ns-note{font-size:11px;color:var(--muted);margin-top:3px;}
+.pill.passed,.pill.on_track{background:var(--go);color:#fff;}
+.pill.at_risk{background:var(--am);color:var(--navy);}
+.pill.failed{background:var(--bad);color:#fff;}
+.nb-h{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--navy);margin:4px 0 4px;}
+.lb-wrap{margin-top:4px;}
+.lb{display:flex;flex-direction:column;gap:6px;}
+.crew-row{display:grid;grid-template-columns:28px 100px 1fr auto auto minmax(210px,auto);gap:10px;align-items:center;}
+.crew-row .rk{font-family:'DM Serif Display',serif;font-size:22px;color:var(--dim);text-align:center;line-height:1;}
 .crew-row .rk.gold{color:var(--gold);}
-.crew-main{min-width:0;}
-.crew-top{display:flex;align-items:baseline;gap:10px;}
-.crew-top .cn{font-family:'DM Serif Display',serif;font-size:22px;color:var(--navy);line-height:1.1;}
-.crew-top .capps{font-family:'DM Serif Display',serif;font-size:22px;color:var(--navy);margin-left:auto;}
-.crew-top .cgp{font-size:14px;font-weight:600;color:var(--muted);min-width:70px;text-align:right;}
-.cbar{height:8px;background:var(--navy-lt);border-radius:4px;margin:3px 0 4px;overflow:hidden;}
-.cbar i{display:block;height:100%;background:var(--navy);border-radius:4px;}
+.crew-row .cn{font-family:'DM Serif Display',serif;font-size:18px;color:var(--navy);line-height:1.1;}
+.cbar-wrap{display:flex;align-items:center;gap:8px;min-width:0;}
+.cbar{flex:1;height:10px;background:var(--navy-lt);border-radius:5px;overflow:hidden;}
+.cbar i{display:block;height:100%;background:var(--navy);border-radius:5px;}
 .crew-row:first-child .cbar i{background:var(--gold);}
-.pills{display:flex;flex-wrap:wrap;gap:4px;}
+.capps{font-family:'DM Serif Display',serif;font-size:18px;color:var(--navy);min-width:26px;text-align:right;}
+.cgp{font-size:14px;font-weight:600;color:var(--muted);min-width:64px;text-align:right;}
+.pills{display:flex;flex-wrap:nowrap;gap:3px;margin:0;justify-content:flex-end;}
 .pill{display:inline-block;font-size:11px;font-weight:700;letter-spacing:0.01em;padding:2px 7px;border-radius:999px;line-height:1.25;}
 .pill.green{background:var(--go);color:#fff;}
 .pill.ok{background:var(--okc);color:#fff;}
 .pill.amber{background:var(--am);color:var(--navy);}
 .pill.red{background:var(--bad);color:#fff;}
 .pill.na{background:var(--surface2);color:var(--muted);}
-.daily{margin-top:8px;border:1px solid var(--border);border-radius:6px;padding:6px 12px;background:var(--surface);display:flex;align-items:center;gap:14px;font-size:13px;color:var(--text);flex:none;}
+.daily{margin-top:2px;border:none;border-radius:0;padding:0;background:transparent;display:flex;align-items:center;gap:10px;font-size:11px;color:var(--muted);flex:none;}
 .daily-k{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);}
 .daily span + span{border-left:1px solid var(--border-dk);padding-left:14px;}
 .daily span:nth-child(2){border-left:none;padding-left:0;}
-.footer{margin-top:auto;padding-top:7px;border-top:2px solid var(--navy);font-size:11px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;flex:none;gap:10px;}
+.footer{margin-top:auto;padding-top:5px;border-top:2px solid var(--navy);font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;flex:none;gap:10px;}
 .footer b{color:var(--navy);}
 *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
 </style>
@@ -169,24 +190,41 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);}
         </div>
             <div class="daychart"><div class="daychart-h">Office apps by day</div><div class="daychart-bars"><div class="dc"><div class="dc-v">27</div><div class="dc-bar" style="height:100%"></div><div class="dc-d">Mon</div></div><div class="dc"><div class="dc-v">22</div><div class="dc-bar" style="height:81%"></div><div class="dc-d">Tue</div></div><div class="dc"><div class="dc-v">25</div><div class="dc-bar" style="height:93%"></div><div class="dc-d">Wed</div></div><div class="dc"><div class="dc-v">25</div><div class="dc-bar" style="height:93%"></div><div class="dc-d">Thu</div></div><div class="dc"><div class="dc-v">19</div><div class="dc-bar" style="height:70%"></div><div class="dc-d">Fri</div></div></div></div>
           </div>
+          <div class="week-cards">
+            
+        <div class="lapc">
+          <div class="t4-k">Week to date</div>
+          <div class="lapt"><b>108</b> timestamped apps · 77 rep-days</div>
+          <div class="lbar"><div class="lseg l1" style="width:41.67%">45</div><div class="lseg l2" style="width:31.48%">34</div><div class="lseg l3" style="width:26.85%">29</div></div>
+          <table class="lt">
+            <tr><td></td><th>Lap 1</th><th>Lap 2</th><th>Lap 3</th></tr>
+            <tr><td>Share</td><td>42%</td><td>31%</td><td>27%</td></tr>
+            <tr><td>Per head</td><td>0.58</td><td>0.44</td><td>0.38</td></tr>
+            <tr class="ltlw"><td>Last wk</td><td>17 · 29%</td><td>25 · 43%</td><td>16 · 28%</td></tr>
+          </table>
+          <div class="lap-sub">Last wk: 58 timed apps, 49 rep-days</div>
+        </div>
+            
+        <div class="mg-card">
+          <div class="t4-k">Missing gauges</div>
+          <div class="mg-today"><span class="mg-tag">Latest · Fri 13 Nov</span> <b>1</b> of 13 in field with no gauges: <b>Ella</b></div>
+          <div class="mg-h">Week so far</div><div class="mg-week"><span class="mg-pill d3"><b>Aaryan</b> 3d<span class="mg-dates">Mon 9, Tue 10, Wed 11</span></span><span class="mg-pill d2"><b>Anjali</b> 2d<span class="mg-dates">Mon 9, Tue 10</span></span><span class="mg-pill d2"><b>Asmi</b> 2d<span class="mg-dates">Tue 10, Wed 11</span></span><span class="mg-pill d2"><b>David</b> 2d<span class="mg-dates">Tue 10, Thu 12</span></span><span class="mg-pill d2"><b>Denis</b> 2d<span class="mg-dates">Wed 11, Thu 12</span></span><span class="mg-pill d2"><b>Yaesha</b> 2d<span class="mg-dates">Mon 9, Tue 10</span></span><span class="mg-pill d1"><b>Carmine</b> 1d<span class="mg-dates">Mon 9</span></span><span class="mg-pill d1"><b>Charlie</b> 1d<span class="mg-dates">Thu 12</span></span><span class="mg-pill d1"><b>Ella</b> 1d<span class="mg-dates">Fri 13</span></span><span class="mg-pill d1"><b>Mohammad</b> 1d<span class="mg-dates">Mon 9</span></span><span class="mg-pill d1"><b>Will Brown</b> 1d<span class="mg-dates">Tue 10</span></span></div>
+        </div>
+          </div>
           
-        <div class="lapw">
-          <div class="lap-row">
-            <div class="lap-k">Week laps</div>
-            <div class="stack"><div class="seg l1" style="width:41.67%"><span>45 · 42% · 0.58/hd</span></div><div class="seg l2" style="width:31.48%"><span>34 · 31% · 0.44/hd</span></div><div class="seg l3" style="width:26.85%"><span>29 · 27% · 0.38/hd</span></div></div>
-            <div class="lap-n">108 timed · 77 rep-days</div>
-          </div>
-          <div class="lap-row lw"><div class="lap-k">Last week</div><div class="stack lw"><div class="seg l1" style="width:29.31%"><span>17 · 29% · 0.35/hd</span></div><div class="seg l2" style="width:43.10%"><span>25 · 43% · 0.51/hd</span></div><div class="seg l3" style="width:27.59%"><span>16 · 28% · 0.33/hd</span></div></div><div class="lap-n">58 timed · 49 rep-days</div></div>
-          <div class="lap-legend">
-            <span><i class="l1"></i> Lap 1</span>
-            <span><i class="l2"></i> Lap 2</span>
-            <span><i class="l3"></i> Lap 3</span>
-          </div>
+        <div class="ns-card">
+          <div class="t4-k">New starters — Week 1</div>
+          <div class="ns-crit">Pass: Evo 100% and 3 sales by Friday morning (Mon–Thu). · Evo as of Sat 14 Nov 07:28 Europe/London</div>
+          <table class="nst">
+            <thead><tr><th>Name</th><th>Start</th><th>Days</th><th>Sales</th><th>Mon–Thu</th><th>Evo</th><th>Status</th><th>Gauges / head</th></tr></thead>
+            <tbody><tr><td class="ns-name">Anjali</td><td>Mon 9 Nov</td><td class="num">2</td><td class="num">1</td><td class="num">1</td><td class="num">Evo 0%</td><td><span class="pill failed">Off track/Failed</span></td><td class="ns-g">—</td></tr><tr><td class="ns-name">Carmine</td><td>Mon 9 Nov</td><td class="num">5</td><td class="num">2</td><td class="num">2</td><td class="num">Evo 0%</td><td><span class="pill failed">Off track/Failed</span></td><td class="ns-g">64 speaks · 9.5 ST · 5.5 pres · 2.8 close</td></tr><tr><td class="ns-name">Lily</td><td>Mon 9 Nov</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">Evo ?</td><td><span class="pill failed">Off track/Failed</span></td><td class="ns-g">—</td></tr><tr><td class="ns-name">Mohammad</td><td>Mon 9 Nov</td><td class="num">5</td><td class="num">2</td><td class="num">2</td><td class="num">Evo 3%</td><td><span class="pill failed">Off track/Failed</span></td><td class="ns-g">43 speaks · 8.2 ST · 3.8 pres · 1.0 close</td></tr><tr><td class="ns-name">Oliver</td><td>Mon 9 Nov</td><td class="num">5</td><td class="num">6</td><td class="num">6</td><td class="num">Evo 51%</td><td><span class="pill at_risk">At risk</span></td><td class="ns-g">65 speaks · 7.6 ST · 4.6 pres · 3.0 close</td></tr><tr><td class="ns-name">Yaesha</td><td>Mon 9 Nov</td><td class="num">5</td><td class="num">3</td><td class="num">2</td><td class="num">Evo 90%</td><td><span class="pill at_risk">At risk</span></td><td class="ns-g">56 speaks · 10.7 ST · 6.7 pres · 3.3 close</td></tr></tbody>
+          </table>
+          <div class="ns-note">Evo not on the Start or Inactive lists: Lily.</div>
         </div>
           
         <div class="lb-wrap">
           <div class="nb-h">Crew leaderboard · week apps</div>
-          <div class="lb"><div class="crew-row"><div class="rk gold">1</div><div class="crew-main"><div class="crew-top"><span class="cn">Adam</span><span class="capps">82</span><span class="cgp">£5,330</span></div><div class="cbar"><i style="width:100.0%"></i></div><div class="pills"><span class="pill amber">1.9 /hd</span><span class="pill green">82 sp</span><span class="pill ok">19.5 ST</span><span class="pill amber">10.5 pr</span><span class="pill amber">8.2 cl</span></div></div></div><div class="crew-row"><div class="rk">2</div><div class="crew-main"><div class="crew-top"><span class="cn">Aaryan</span><span class="capps">21</span><span class="cgp">£1,365</span></div><div class="cbar"><i style="width:25.6%"></i></div><div class="pills"><span class="pill amber">1.8 /hd</span><span class="pill green">86 sp</span><span class="pill green">21.0 ST</span><span class="pill ok">12.1 pr</span><span class="pill green">13.6 cl</span></div></div></div><div class="crew-row"><div class="rk">3</div><div class="crew-main"><div class="crew-top"><span class="cn">Asmi</span><span class="capps">21</span><span class="cgp">£1,365</span></div><div class="cbar"><i style="width:25.6%"></i></div><div class="pills"><span class="pill amber">1.8 /hd</span><span class="pill ok">68 sp</span><span class="pill amber">15.8 ST</span><span class="pill amber">9.0 pr</span><span class="pill red">4.9 cl</span></div></div></div><div class="crew-row"><div class="rk">4</div><div class="crew-main"><div class="crew-top"><span class="cn">Abdul</span><span class="capps">12</span><span class="cgp">£780</span></div><div class="cbar"><i style="width:14.6%"></i></div><div class="pills"><span class="pill ok">2.4 /hd</span><span class="pill green">91 sp</span><span class="pill green">22.0 ST</span><span class="pill amber">11.0 pr</span><span class="pill amber">9.4 cl</span></div></div></div><div class="crew-row"><div class="rk">5</div><div class="crew-main"><div class="crew-top"><span class="cn">Remzy</span><span class="capps">9</span><span class="cgp">£585</span></div><div class="cbar"><i style="width:11.0%"></i></div><div class="pills"><span class="pill red">0.9 /hd</span><span class="pill amber">62 sp</span><span class="pill amber">12.4 ST</span><span class="pill red">7.4 pr</span><span class="pill red">4.0 cl</span></div></div></div></div>
+          <div class="lb"><div class="crew-row"><div class="rk gold">1</div><span class="cn">Adam</span><div class="cbar-wrap"><div class="cbar"><i style="width:100.0%"></i></div><span class="capps">82</span></div><span class="pill amber">1.9 /hd</span><span class="cgp">£5,330</span><div class="pills"><span class="pill green">82 sp</span><span class="pill ok">19.5 ST</span><span class="pill amber">10.5 pr</span><span class="pill amber">8.2 cl</span></div></div><div class="crew-row"><div class="rk">2</div><span class="cn">Aaryan</span><div class="cbar-wrap"><div class="cbar"><i style="width:25.6%"></i></div><span class="capps">21</span></div><span class="pill amber">1.8 /hd</span><span class="cgp">£1,365</span><div class="pills"><span class="pill green">86 sp</span><span class="pill green">21.0 ST</span><span class="pill ok">12.1 pr</span><span class="pill green">13.6 cl</span></div></div><div class="crew-row"><div class="rk">3</div><span class="cn">Asmi</span><div class="cbar-wrap"><div class="cbar"><i style="width:25.6%"></i></div><span class="capps">21</span></div><span class="pill amber">1.8 /hd</span><span class="cgp">£1,365</span><div class="pills"><span class="pill ok">68 sp</span><span class="pill amber">15.8 ST</span><span class="pill amber">9.0 pr</span><span class="pill red">4.9 cl</span></div></div><div class="crew-row"><div class="rk">4</div><span class="cn">Abdul</span><div class="cbar-wrap"><div class="cbar"><i style="width:14.6%"></i></div><span class="capps">12</span></div><span class="pill ok">2.4 /hd</span><span class="cgp">£780</span><div class="pills"><span class="pill green">91 sp</span><span class="pill green">22.0 ST</span><span class="pill amber">11.0 pr</span><span class="pill amber">9.4 cl</span></div></div><div class="crew-row"><div class="rk">5</div><span class="cn">Remzy</span><div class="cbar-wrap"><div class="cbar"><i style="width:11.0%"></i></div><span class="capps">9</span></div><span class="pill red">0.9 /hd</span><span class="cgp">£585</span><div class="pills"><span class="pill amber">62 sp</span><span class="pill amber">12.4 ST</span><span class="pill red">7.4 pr</span><span class="pill red">4.0 cl</span></div></div></div>
         </div>
         </section>
     <div class="daily"><span class="daily-k">Friday 13 Nov 2026</span><span>17 apps</span><span>13 in field</span><span>£1,105 GP</span><span>Top: Adam &amp; Asmi (3)</span></div>
